@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: DM sans
+}
+
+@font-face {
+    font-family: DM sans;
+    src: url(../assets/fonts/DMSans-Regular.ttf);
+}
+
+.text-center {
+    text-align: center
+}
+
+.py {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+header {
+    @extend %flex;
+    height: 70px;
+    padding: 20px 30px;
+
+    button {
+        @extend %button;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 1em;
+        background-color: transparent;
+
+        &:hover {
+            color: white;
+            background-color: $primary-color;
+        }
+    }
+}
+
+.hearder-scroll {
+    background-color: white;
+    box-shadow: 0px 0px 3px rgb(102, 102, 102);
+}
+
+nav ul li {
+    @extend %inline-li;
+    cursor: pointer;
+
+    &:hover {
+        color: $primary-color;
+    }
+
+}
+
+.baniere {
+    @extend %flex;
+    padding: 30px 40px;
+    // background-color: #f6f8fb;
+
+    .desc-img {
+        width: 65%;
+
+        img {
+            width: 100%
+        }
+    }
+
+    .desc {
+        width: 45%;
+        color: $text-color;
+
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            word-spacing: 3px;
+        }
+    }
+}
+
+
+.form {
+    margin: 40px 0px;
+
+    input {
+        width: 65%;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 5px;
+        margin-right: 20px;
+        outline: none;
+        background-color: #f6f8fb;
+        font-size: 1.2em
+    }
+
+    button {
+        @extend %button;
+        color: white;
+        background-color: $primary-color;
+        padding: 13px 30px;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+}
+
+.sponsors * {
+    @include space-x(10px)
+}
+
+.sponsors {
+    margin-bottom: 50px;
+
+    span {
+        opacity: .6;
+    }
+
+    @extend %flex;
+}
+
+.services {
+    padding: 40px 30px;
+    background-color: #f6f8fb;
+
+    h4 {
+        color: $primary-color;
+    }
+}
+
+.services-items {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @extend %flex;
+    @extend .text-center;
+}
+
+.service {
+    @extend %flex;
+    flex-direction: column;
+    justify-content: center;
+    @include space-x(10px);
+
+
+    span {
+        font-weight: bold;
+        display: block;
+        margin: 20px 0;
+    }
+
+    ;
+
+    p {
+        line-height: 2;
+        opacity: .8;
+        width: 80%;
+    }
+}
+
+$service-items: img-container1 rgb(255, 213, 97),
+    img-container2 rgb(81, 224, 224),
+    img-container3 rgb(43, 167, 235),
+    img-container4 rgb(255, 157, 120);
+
+@each $item in $service-items {
+    .#{nth($item, 1)} {
+        background-color: nth($item, 2);
+        width: 100px;
+        height: 100px;
+        @extend %flex;
+        justify-content: center;
+        border-radius: 30px;
+        margin-bottom: 10px;
+    }
+
+}

@@ -1,0 +1,17 @@
+%flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+%inline-li {
+    display: inline-block;
+    padding: 0 20px 0 20px;
+}
+
+%button {
+    padding: 10px 15px;
+    color: $primary-color;
+    border: 1px solid $primary-color;
+    border-radius: 5px;
+}
