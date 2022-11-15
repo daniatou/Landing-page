@@ -1,11 +1,11 @@
-.news, .service2, .img-container4, .img-container3, .img-container2, .img-container1, .service, .services-items, .sponsors, .baniere, header {
+.hiring, .news, .service2, .img-container4, .img-container3, .img-container2, .img-container1, .service, .services-items, .sponsors, .baniere, header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 @media screen and (max-width: 768px) {
-  .news, .service2, .img-container4, .img-container3, .img-container2, .img-container1, .service, .services-items, .sponsors, .baniere, header {
+  .hiring, .news, .service2, .img-container4, .img-container3, .img-container2, .img-container1, .service, .services-items, .sponsors, .baniere, header {
     flex-wrap: wrap;
   }
 }
@@ -257,4 +257,29 @@ nav ul li:hover {
   opacity: 0.7;
   padding-right: 10px;
   font-size: 15px;
+}
+
+.hiring {
+  background-color: #793677;
+  color: white;
+  padding: 50px 40px;
+  margin: 80px 50px;
+  border-radius: 5px;
+}
+.hiring h3 {
+  font-size: 2rem;
+}
+.hiring button {
+  padding: 15px 30px;
+  border: none;
+  background-color: white;
+  color: #793677;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.hiring button:hover {
+  color: white;
+  background-color: #02073E;
 }/*# sourceMappingURL=style.css.map */
