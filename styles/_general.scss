@@ -178,3 +178,55 @@ $service-items: img-container1 rgb(255, 213, 97),
     }
 
 }
+
+.service2 {
+    @extend %flex;
+    padding: 50px;
+
+
+    .img {
+        width: 50%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .description {
+        width: 45%;
+        margin-left: 20px;
+
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #02073E;
+            line-height: 1.8;
+            opacity: .7;
+
+        }
+
+        ul li {
+            list-style: none;
+            padding-top: 20px;
+            color: #02073E;
+        }
+
+        button {
+            cursor: pointer;
+            margin-top: 30px;
+            border: none;
+            color: $primary-color;
+            font-size: 1rem;
+            font-weight: 600;
+            padding: 15px 20px 15px 0;
+            background-color: transparent;
+        }
+    }
+
+
+}
