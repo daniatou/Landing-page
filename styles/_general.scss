@@ -137,6 +137,7 @@ nav ul li {
     padding-bottom: 60px;
     @extend %flex;
     @extend .text-center;
+
 }
 
 .service {
@@ -227,6 +228,45 @@ $service-items: img-container1 rgb(255, 213, 97),
             background-color: transparent;
         }
     }
+}
+
+.title h4 {
+    color: $primary-color;
+}
+
+.news {
+    @extend %flex;
+    margin: 40px 20px;
+
+    .new {
+        cursor: pointer;
+        border: 1px solid gainsboro;
+        border-radius: 5px;
+        width: 380px;
+        overflow: hidden;
+        color: #02073E;
+
+        div {
+            padding: 20px;
+        }
+
+        h3 {
+            cursor: pointer;
+
+            &:hover {
+                color: $primary-color;
+            }
+
+            margin-bottom: 20px;
+        }
+
+        .fa,
+        span {
+            opacity: .7;
+            padding-right: 10px;
+            font-size: 15px;
+        }
 
 
+    }
 }

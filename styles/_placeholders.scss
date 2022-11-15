@@ -4,6 +4,13 @@
     align-items: center;
 }
 
+@media screen and (max-width: 768px) {
+    %flex {
+        flex-wrap: wrap;
+    }
+
+}
+
 %inline-li {
     display: inline-block;
     padding: 0 20px 0 20px;
