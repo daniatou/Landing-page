@@ -23,6 +23,9 @@ header {
     @extend %flex;
     height: 70px;
     padding: 20px 30px;
+    position: fixed;
+    width: 100%;
+
 
     button {
         @extend %button;
@@ -41,6 +44,7 @@ header {
 .hearder-scroll {
     background-color: white;
     box-shadow: 0px 0px 3px rgb(102, 102, 102);
+
 }
 
 nav ul li {
@@ -55,7 +59,7 @@ nav ul li {
 
 .baniere {
     @extend %flex;
-    padding: 30px 40px;
+    padding: 100px 40px;
     // background-color: #f6f8fb;
 
     .desc-img {

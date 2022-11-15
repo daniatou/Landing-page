@@ -44,6 +44,8 @@ nav ul li {
 header {
   height: 70px;
   padding: 20px 30px;
+  position: fixed;
+  width: 100%;
 }
 header button {
   cursor: pointer;
@@ -69,7 +71,7 @@ nav ul li:hover {
 }
 
 .baniere {
-  padding: 30px 40px;
+  padding: 100px 40px;
 }
 .baniere .desc-img {
   width: 65%;
