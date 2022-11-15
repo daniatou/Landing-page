@@ -1,11 +1,11 @@
-.hiring, .news, .service2, .img-container4, .img-container3, .img-container2, .img-container1, .service, .services-items, .sponsors, .baniere, header {
+footer, .hiring, .news, .service2, .img-container4, .img-container3, .img-container2, .img-container1, .service, .services-items, .sponsors, .baniere, header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 @media screen and (max-width: 768px) {
-  .hiring, .news, .service2, .img-container4, .img-container3, .img-container2, .img-container1, .service, .services-items, .sponsors, .baniere, header {
+  footer, .hiring, .news, .service2, .img-container4, .img-container3, .img-container2, .img-container1, .service, .services-items, .sponsors, .baniere, header {
     flex-wrap: wrap;
   }
 }
@@ -282,4 +282,12 @@ nav ul li:hover {
 .hiring button:hover {
   color: white;
   background-color: #02073E;
+}
+
+footer {
+  margin: 50px 20px;
+  cursor: pointer;
+}
+footer .copy {
+  opacity: 0.7;
 }/*# sourceMappingURL=style.css.map */

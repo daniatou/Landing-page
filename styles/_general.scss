@@ -300,3 +300,14 @@ $service-items: img-container1 rgb(255, 213, 97),
 
     }
 }
+
+
+footer {
+    margin: 50px 20px;
+    @extend %flex;
+    cursor: pointer;
+
+    .copy {
+        opacity: .7;
+    }
+}
